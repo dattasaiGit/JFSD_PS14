@@ -1,0 +1,316 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #f4f7f9; /* Light background for contrast */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%; /* Adjust padding for a balanced look */
+    background-color: #7393B3;
+    margin-top: 20px;
+    border-radius: 5px;
+    position: relative; /* Allow dropdown to position correctly */
+}
+
+.logo {
+    color: #161a2d;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: auto; /* Push logo to the left */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow nav links to take up remaining space */
+    justify-content: center; /* Keep nav links centered */
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative; /* Needed for dropdown */
+}
+
+.nav-links a {
+    color: #161a2d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s;
+    display: flex;
+    align-items: center; /* Align icons with text */
+}
+
+.nav-links a span {
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.nav-links a:hover {
+    color: #fff;
+    background-color: #161a2d;
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.icons {
+    display: flex; /* Flex for icon alignment */
+    align-items: center;
+    gap: 20px; /* Spacing between icons */
+}
+
+.icons a {
+    color: #161a2d;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.icons a:hover {
+    color: #fff;
+    background-color: #161a2d;
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.profile-link {
+    color: #161a2d;
+    text-decoration: none;
+    padding: 10px; /* Ensure the same padding as other nav items */
+    font-weight: bold; /* Match bold styling of nav links */
+    display: flex; /* Flex for alignment */
+    align-items: center; /* Ensure icon and text align properly */
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.profile-link:hover {
+    background-color: #161a2d; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
+
+.dropdown {
+    position: relative; /* Relative for dropdown positioning */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Position dropdown below parent */
+    top: 100%; /* Position below the nav link */
+    right: 0; /* Align dropdown to the right */
+    background: #fff; /* White background for contrast */
+    width: 200px; /* Adjust width for better padding */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    z-index: 999; /* Stay on top */
+    opacity: 0; /* Smooth transition */
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1; /* Smooth fade-in */
+    visibility: visible; /* Show dropdown */
+}
+
+.dropdown-content li {
+    display: block; /* Stack dropdown items */
+}
+
+.dropdown-content a {
+    padding: 10px 15px; /* Space inside dropdown items */
+    color: #161a2d; /* Color for dropdown items */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-content a:hover {
+    background-color: #7393B3; /* Change background on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.dropdown-content a span {
+    margin-right: 10px; /* Add spacing between icons and text */
+}
+
+.nav-links .dropdown-toggle {
+    display: flex;
+    align-items: center; /* Align dropdown arrow */
+}
+
+.nav-links .dropdown-content {
+    left: 0; /* Align dropdown for "Applications" */
+    top: 100%;
+}
+/* Welcome Section */
+.welcome-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.welcome-section h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.cta-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #4a4a4a;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+}
+
+.btn-secondary {
+    background-color: #7393B3;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #556c86;
+}
+
+/* Dashboard Section */
+.dashboard-section {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.dashboard-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.dashboard-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dashboard-card {
+    background-color: #7393B3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: scale(1.05);
+}
+
+.dashboard-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card span {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+}
+
+/* Featured Jobs Section */
+.featured-jobs-section {
+    padding: 40px;
+    background-color: #f4f7f9;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.featured-jobs-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.job-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+    transform: scale(1.05);
+}
+
+.job-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.job-card p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.btn-manage {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #7393B3;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-manage:hover {
+    background-color: #556c86;
+}

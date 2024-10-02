@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin - Students</title>
+  <!-- Linking Google Font Link For Icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="AdminStyle.css" />
+  <style>
+    /* Styling for the students section */
+    .students-container {
+      margin-left: 320px; /* Adjust according to your sidebar width */
+      padding: 20px;
+    }
+
+    .students-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .students-table th, .students-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .students-table th {
+      background-color: lightgrey;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="images/logo.png" alt="logo" />
+      <h2>Career Connects</h2>
+    </div>
+    <ul class="sidebar-links">
+      <h4>
+        <span>Main Menu</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li>
+        <a href="Adminhome.html">
+          <span class="material-symbols-outlined"> dashboard </span>Dashboard</a>
+      </li>
+      <li>
+        <a href="adminreports.html"><span class="material-symbols-outlined"> monitoring </span>Reports</a>
+      </li>
+      <li>
+        <a href="adminverify.html"><span class="material-symbols-outlined"> verified </span>Verify Users</a>
+      </li>
+      <h4>
+        <span>Users</span>
+        <div class="menu-separator"></div>
+      </h4>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropdown-btn" onclick="toggleDropdown(event)">
+          <span class="material-symbols-outlined"> person </span>Student
+          <span class="material-symbols-outlined dropdown-icon"> expand_more </span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="adminstudents.html"><span class="material-symbols-outlined"> visibility </span>View Students</a></li>
+          <li><a href="adminstudentsdelete.html"><span class="material-symbols-outlined"> delete </span>Delete Students</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropdown-btn" onclick="toggleDropdown(event)">
+          <span class="material-symbols-outlined"> person </span>Placement Officer
+          <span class="material-symbols-outlined dropdown-icon"> expand_more </span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><span class="material-symbols-outlined"> visibility </span>View Placement Officers</a></li>
+          <li><a href="#"><span class="material-symbols-outlined"> delete </span>Delete Placement Officers</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0);" class="dropdown-btn" onclick="toggleDropdown(event)">
+          <span class="material-symbols-outlined"> person </span>Recruiter
+          <span class="material-symbols-outlined dropdown-icon"> expand_more </span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><span class="material-symbols-outlined"> visibility </span>View Recruiters</a></li>
+          <li><a href="#"><span class="material-symbols-outlined"> delete </span>Delete Recruiters</a></li>
+        </ul>
+      </li>
+    </ul>
+  </aside>
+
+  <div class="user-account">
+    <ul>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> notifications_active </span>Notifications</a>
+      </li>
+      <li>
+        <a href="#"><span class="material-symbols-outlined"> account_circle </span>Profile</a>
+      </li>
+      <li>
+        <a href="login.html"><span class="material-symbols-outlined"> logout </span>Logout</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Students Section -->
+  <div class="students-container">
+    <h2>Students</h2>
+    <table class="students-table">
+      <thead>
+        <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Example row for a student -->
+        <tr>
+          <td>1001</td>
+          <td>Alice Johnson</td>
+          <td>alice.johnson@example.com</td>
+          <td>Computer Science</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>1002</td>
+          <td>Bob Williams</td>
+          <td>bob.williams@example.com</td>
+          <td>Mechanical Engineering</td>
+          <td>Active</td>
+        </tr>
+        <tr>
+          <td>1003</td>
+          <td>Charlie Brown</td>
+          <td>charlie.brown@example.com</td>
+          <td>Electrical Engineering</td>
+          <td>Pending</td>
+        </tr>
+        <!-- Additional rows for other students would go here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    function toggleDropdown(event) {
+      // Prevents the dropdown from collapsing when clicking on the already open menu
+      const allDropdowns = document.querySelectorAll('.dropdown-menu');
+      const currentDropdown = event.currentTarget.nextElementSibling;
+
+      // Close all other dropdowns
+      allDropdowns.forEach(dropdown => {
+        if (dropdown !== currentDropdown) {
+          dropdown.classList.remove('active');
+        }
+      });
+
+      // Toggle the current dropdown
+      currentDropdown.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
