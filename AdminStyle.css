@@ -1,4 +1,3 @@
-/* General Styling */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
@@ -13,7 +12,6 @@ body {
   background: #F0F4FF;
 }
 
-/* Sidebar Styling */
 .sidebar {
   position: fixed;
   top: 0;
@@ -28,7 +26,6 @@ body {
   transition: all 0.4s ease;
 }
 
-/* Sidebar Header */
 .sidebar .sidebar-header {
   display: flex;
   align-items: center;
@@ -47,7 +44,6 @@ body {
   margin-left: 23px;
 }
 
-/* Sidebar Links */
 .sidebar-links h4 {
   color: #fff;
   font-weight: 500;
@@ -90,7 +86,6 @@ body {
   border-radius: 4px;
 }
 
-/* Dropdown Menu */
 .dropdown {
   position: relative;
 }
@@ -99,14 +94,13 @@ body {
   margin-left: auto;
 }
 
-/* Dropdown Menu */
 .dropdown-menu {
     display: none;
     list-style: none;
     padding: 0;
     margin: 0;
-    background: #161a2d; /* Ensure the dropdown background matches */
-    border-radius: 4px; /* Optional: Round corners */
+    background: #161a2d; 
+    border-radius: 4px; 
   }
   
   .dropdown-menu.active {
@@ -114,26 +108,25 @@ body {
   }
   
   .dropdown-menu li {
-    padding: 0; /* Reset padding for list items */
+    padding: 0;
   }
   
   .dropdown-menu li a {
     color: #fff;
-    padding: 10px 20px; /* Space around the link */
+    padding: 10px 20px;
     text-decoration: none;
-    display: flex; /* Flex to align icon and text */
-    align-items: center; /* Center the icon vertically */
+    display: flex; 
+    align-items: center; 
     font-weight: 500;
     transition: 0.2s ease;
   }
   
   .dropdown-menu li a:hover {
-    background-color: #f0f4ff; /* Highlight background on hover */
-    color: #161a2d; /* Text color on hover */
+    background-color: #f0f4ff; 
+    color: #161a2d; 
   }
   
 
-/* User Account Styling */
 .user-account {
   display: flex;
   justify-content: flex-end;
@@ -163,14 +156,13 @@ body {
 }
 
 
-/* Card Layout Styling */
 .dashboard-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  margin-left: 320px; /* Adjust according to your sidebar width */
-  margin-top: 40px; /* Add space from the top (navbar) */
+  margin-left: 320px; 
+  margin-top: 40px; 
 }
 
 .card {
