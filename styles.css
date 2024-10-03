@@ -2,25 +2,25 @@
 
 body {
     margin: 0;
-    font-family: 'Open Sans', sans-serif; /* Using Open Sans font */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
-    position: absolute; /* Position the navbar absolutely */
-    top: 20px; /* Adjust the distance from the top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    z-index: 10; /* Ensures it stays above the hero image */
-    height: 60px; /* Maintain height for vertical alignment */
+    z-index: 10;
+    height: 60px;
     padding: 0 15px;
 }
 
 .navdiv {
     display: flex;
-    align-items: center; /* Center items vertically */
-    justify-content: space-between; /* Space between logo and buttons */
-    height: 100%; /* Ensure navdiv takes full height of navbar */
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .logo a {
@@ -46,14 +46,14 @@ body {
 }
 
 .hero h2 {
-    font-size: 3em; /* Adjusted for better readability */
+    font-size: 3em;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
 .hero p {
-    font-size: 1.5em; /* Added paragraph styling */
-    margin: 0 0 2em 0; /* Bottom margin for spacing */
+    font-size: 1.5em;
+    margin: 0 0 2em 0;
 }
 
 button {
@@ -77,10 +77,10 @@ button:hover {
 }
 
 #topcompanies {
-    font-size: 3em; /* Adjust the size as needed */
+    font-size: 3em;
     text-align: center;
-    margin-top: 100px; /* Optional: add some spacing above */
-    margin-bottom: 5px; /* Optional: add some spacing below */
+    margin-top: 100px;
+    margin-bottom: 5px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -129,9 +129,9 @@ button:hover {
 }
 
 .card-list .developer {
-    background-color: #F7DFF5; 
+    background-color: #F7DFF5;
     color: #B22485;
-}   
+}
 
 .card-list .designer {
     background-color: #d1e8ff;
@@ -139,7 +139,7 @@ button:hover {
 }
 
 .card-list .editor {
-    background-color: #d6f8d6; 
+    background-color: #d6f8d6;
     color: #205c20;
 }
 
@@ -166,31 +166,31 @@ button:hover {
 
 .card-list .card-item:hover .arrow {
     background: #000;
-    color: #fff; 
+    color: #fff;
 }
-/* Testimonial Section */
+
 .testimonial-section {
     display: flex;
-    flex-direction: column; /* Stack heading vertically */
+    flex-direction: column;
     align-items: center;
-    padding: 50px 20px; /* Add padding to top and bottom */
-    background-color: #f8f8f8; /* Light background for contrast */
+    padding: 50px 20px;
+    background-color: #f8f8f8;
 }
 
 #success {
-    font-size: 3em; /* Adjust the size as needed */
+    font-size: 3em;
     text-align: center;
-    margin-top: 0; /* No margin to avoid spacing issues */
-    margin-bottom: 40px; /* Add some spacing below */
-    color: #4a4a4a; /* Darker color for contrast */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-cards {
-    display: flex; /* Change to flex for horizontal layout */
-    justify-content: center; /* Center the cards */
-    gap: 30px; /* Space between cards */
-    flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .testimonial-card {
@@ -198,7 +198,7 @@ button:hover {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    width: 350px; /* Width of each card */
+    width: 350px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -210,13 +210,12 @@ button:hover {
 .testimonial-image {
     padding: 20px;
     background-color: #fff;
-
 }
 
 .testimonial-image img {
-    width: 100%; /* Set the image width to 100% of the container */
-    height: 300px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     border-radius: 8px;
 }
 
@@ -238,100 +237,85 @@ button:hover {
     color: #dcdcdc;
     text-align: justify;
 }
-/* General Footer Styling */
+
 .footer {
-    background-color: #000; /* Dark background for the footer */
-    color: #F7DFF5; /* Light text color for contrast */
-    padding: 20px 0; /* Vertical padding */
+    background-color: #000;
+    color: #F7DFF5;
+    padding: 20px 0;
 }
 
-/* Flexbox Layout for Footer Content */
 .footer-content {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between elements */
-    align-items: flex-start; /* Align items at the start */
-    max-width: 1200px; /* Max width of footer content */
-    margin: auto; /* Center footer content */
-    padding: 0 20px; /* Horizontal padding */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
 }
 
-/* Logo Section */
 .footer-logo {
-    flex: 1; /* Allow the logo section to grow */
-    display: flex; /* Flexbox for logo and text alignment */
-    align-items: center; /* Center items vertically */
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
-/* Logo Styling */
 .footer-logo .logo {
-    width: 80px; /* Logo width */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 15px; /* Space between logo and text */
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
 }
 
-/* Links Section */
 .footer-links, .footer-contact {
-    flex: 1; /* Allow the links and contact sections to grow */
+    flex: 1;
 }
 
-/* Headings for Links and Contact */
 .footer-links h3, .footer-contact h3 {
-    margin-bottom: 10px; /* Margin below headings */
-    font-size: 18px; /* Font size for headings */
-    border-bottom: 2px solid #F7DFF5; /* Underline for headings */
-    padding-bottom: 5px; /* Padding below headings */
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 2px solid #F7DFF5;
+    padding-bottom: 5px;
 }
 
-/* Unordered List Styling */
 .footer-links ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
+    list-style: none;
+    padding: 0;
 }
 
-/* List Item Styling */
 .footer-links li {
-    margin: 8px 0; /* Space between list items */
+    margin: 8px 0;
 }
 
-/* Link Styling */
 .footer-links a, .footer-contact a {
-    color: #F7DFF5; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    color: #F7DFF5;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-/* Hover Effects for Links */
 .footer-links a:hover, .footer-contact a:hover {
-    text-decoration: underline; /* Underline on hover */
-    color: #FFC107; /* Change color on hover */
+    text-decoration: underline;
+    color: #FFC107;
 }
 
-/* Social Icons Section */
 .social-icons {
-    display: flex; /* Flexbox for horizontal layout */
-    gap: 15px; /* Space between social icons */
-    margin-top: 10px; /* Margin above icons */
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
 }
 
-/* Social Icon Styling */
 .social-icon {
-    font-size: 24px; /* Size of the social icons */
-    color: #F7DFF5; /* Color of the icons */
-    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 24px;
+    color: #F7DFF5;
+    transition: color 0.3s ease;
 }
 
-/* Hover Effect for Social Icons */
 .social-icon:hover {
-    color: #FFC107; /* Change color on hover */
+    color: #FFC107;
 }
 
-/* Bottom Section of Footer */
 .footer-bottom {
-    text-align: center; /* Center text */
-    margin-top: 20px; /* Space above */
-    font-size: 14px; /* Smaller text size */
-    border-top: 1px solid rgba(255, 255, 255, 0.3); /* Top border for separation */
-    padding-top: 10px; /* Padding above */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 10px;
 }
-
- 
