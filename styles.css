@@ -298,18 +298,35 @@ button:hover {
 
 .social-icons {
     display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    gap: 10px;
 }
 
 .social-icon {
-    font-size: 24px;
-    color: #F7DFF5;
+    font-size: 30px;
     transition: color 0.3s ease;
 }
 
-.social-icon:hover {
-    color: #FFC107;
+.facebook-icon {
+    color: #3b5998; 
+}
+.facebook-icon:hover {
+    color: #3b5998; 
+}
+
+.twitter-icon {
+    color: #1da1f2;
+}
+.twitter-icon:hover {
+    color: #000000; 
+}
+
+.instagram-icon {
+    color: #e4405f; 
+}
+.instagram-icon:hover {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); /* Instagram multi-color */
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .footer-bottom {
